@@ -1,6 +1,13 @@
-#include <bits/stdc++.h>
+#ifndef _FUNCTION_H 
+#define _FUNCTION_H 
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <iomanip> 
 
 using namespace std;
+#endif 
+
 
 void show_menu()
 {
@@ -9,7 +16,7 @@ void show_menu()
          << "1.Heap Sort" << endl
          << "2.Shaker Sort" << endl
          << "3.Bitonic Sort" << endl
-         << "4.Thoat" << endl;
+         << "4.Thoat" << endl << endl;
 }
 
 void reset(int a[], int b[], int n)
@@ -20,11 +27,11 @@ void reset(int a[], int b[], int n)
     }
 }
 
-void clear_data(FILE *f)
+void clear_data(FILE *f, int n)
 {
+    f = fopen("output.txt", "w");
+    fprintf(f, "n = %d \n", n);
     fclose(f);
-    fclose(fopen("output.txt", "w"));
-    f = fopen("output.txt", "a");
     cout << "Da xoa" << endl;
 }
 

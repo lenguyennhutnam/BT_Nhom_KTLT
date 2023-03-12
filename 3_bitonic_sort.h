@@ -1,6 +1,12 @@
-#include <bits/stdc++.h>
+#ifndef _BITONIC_SORT_H
+#define _BITONIC_SORT_H
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <iomanip> 
 
 using namespace std;
+#endif 
 
 void bitonic_sort(int a[], int n) {
     int k, j, l, i, temp;
@@ -19,6 +25,8 @@ void bitonic_sort(int a[], int n) {
         }
     }
 }
+
+
 
 double timer_bitonic(int b[], int n)
 {

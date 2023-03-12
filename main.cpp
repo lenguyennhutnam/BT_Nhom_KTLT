@@ -13,6 +13,7 @@ int main()
     int n;
     cin >> n;
     fprintf(f, "n = %d \n", n); // ghi so luong phan tu trong mang vao file
+    fclose(f);
     for (int i = 0; i < n; i++)
     {
         a[i] = rand() % n; // random cac phan tu cua mang
@@ -36,25 +37,31 @@ int main()
         {
         case 0:
         {
-            clear_data(f);
+            clear_data(f, n);
             fprintf(f, "n = %d \n", n);
             break;
         }
         case 1:
         {
+            f = fopen("output.txt", "a");
             fprintf(f, "TT Heap Sort: %.4llfs \n", timer_heap(b, n)); // ghi thoi gian thuc hien TT vao file
-            reset(a, b, n);                                           // reset lai gia tri cua mang
+            fclose(f);
+            reset(a, b, n); // reset lai gia tri cua mang
             break;
         }
         case 2:
         {
+            f = fopen("output.txt", "a");
             fprintf(f, "TT Shaker Sort: %.4llfs \n", timer_shaker(b, n)); // ghi thoi gian thuc hien TT vao file
+            fclose(f);
             reset(a, b, n);
             break;
         }
         case 3:
         {
+            f = fopen("output.txt", "a");
             fprintf(f, "TT Bitonic Sort: %.4llfs \n", timer_bitonic(b, n)); // ghi thoi gian thuc hien TT vao file
+            fclose(f);
             reset(a, b, n);
             break;
         }
@@ -62,6 +69,4 @@ int main()
         if (option == 4)
             break;
     }
-
-    fclose(f);
 }

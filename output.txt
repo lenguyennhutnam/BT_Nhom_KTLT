@@ -1,6 +1,1 @@
-n = 10000 
-TT Heap Sort: 0.0030s 
-TT Shaker Sort: 0.1740s 
-TT Bitonic Sort: 0.0030s 
-TT Heap Sort: 0.0030s 
-TT Shaker Sort: 0.1730s 
+n = 100000 

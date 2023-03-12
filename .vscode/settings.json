@@ -40,6 +40,9 @@
     "bitset": "cpp",
     "memory": "cpp",
     "random": "cpp",
-    "future": "cpp"
+    "future": "cpp",
+    "iomanip": "cpp",
+    "cstdlib": "cpp",
+    "ctime": "cpp"
   }
 }

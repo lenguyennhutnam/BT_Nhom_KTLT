@@ -1,6 +1,12 @@
-#include <bits/stdc++.h>
+#ifndef _HEAP_SORT_H
+#define _HEAP_SORT_H
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <iomanip> 
 
 using namespace std;
+#endif 
 
 void heapify(int a[], int n, int i)
 {

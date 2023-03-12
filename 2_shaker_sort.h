@@ -1,6 +1,12 @@
-#include <bits/stdc++.h>
+#ifndef _SHAKER_SORT_H
+#define _SHAKER_SORT_H
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+#include <iomanip> 
 
 using namespace std;
+#endif 
 
 void shaker_sort(int a[], int n)
 {
